@@ -1,0 +1,11 @@
+framework module ALFLibrary {
+  umbrella header "ALFLibrary.h"
+  export *
+
+  module * { export * }
+}
+
+module ALFLibrary.Swift {
+  header "ALFLibrary-Swift.h"
+  requires objc
+}
