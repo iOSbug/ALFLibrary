@@ -36,8 +36,8 @@ TODO: Add long description of the pod here.
 #   s.source_files = 'ALFLibrary/Classes/**/*'
 
 #    ss.source_files        = 'ALFLibrary.framework/Headers/*.{h}'
-    ss.resources           = 'ALFLBundle.bundle'
-    ss.preserve_paths      = 'ALFLibrary.framework/*', 'ALFLBundle.bundle'
+    ss.resources           = 'ALFBundle.bundle'
+    ss.preserve_paths      = 'ALFLibrary.framework/*', 'ALFBundle.bundle'
 
   ss.frameworks   = 'OpenGLES','Foundation','SystemConfiguration','OpenAL','Security','MediaPlayer','AVFoundation','CoreVideo','CoreAudio','CoreMedia','VideoToolbox','AudioToolbox','AdSupport','NetworkExtension','GLKit'
   
