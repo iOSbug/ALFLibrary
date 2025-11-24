@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/ALFLibrary-Swift.h</key>
 		<data>
-		Zwzb93LzlZZHF531XfECAPYVH44=
+		7hp2Sm0wekjG72O7Ohd/Jc4IiG0=
 		</data>
 		<key>Headers/ALFLibrary.h</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YlZhT7ho/sD44HvjkCBbmVSh+BA=
+		hR7fMZGZ1PtX1c2QCuTcWgIaDGA=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -318,27 +318,27 @@
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		m2xNtgBqB06IIRxtyAfFFGUvDO8=
+		3eyLg8E1rWB+oUupR1P6IdSAdq4=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ndjm7nX9Nkrc12/y9oLRvz3hY+U=
+		v9BiGbvHgsd4x5RuNp+672owREc=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		0+q55V6kpnstO16E/yd5QjENzao=
+		bO/7U6twIow4urplIbGtZ0+TfcU=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gTjRiggUhqALWaoLh61UFy5Jiwo=
+		wQi2SHjvwb+ue0uXalZL0THKmi8=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0+q55V6kpnstO16E/yd5QjENzao=
+		bO/7U6twIow4urplIbGtZ0+TfcU=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+LyZ/cIIA/6mYMRhyWl3yKpfFi8=
+		N9YIzBV4MCzN1tyygNglkSeMxCA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -630,11 +630,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Zwzb93LzlZZHF531XfECAPYVH44=
+			7hp2Sm0wekjG72O7Ohd/Jc4IiG0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WQjXwgcq5Uk2bED7AMjdviw9E9XVs24iXtoj/sljxKQ=
+			STvynomSxS0klIzxgzE1HXTcBexuvlAWxo/sU604L5E=
 			</data>
 		</dict>
 		<key>Headers/ALFLibrary.h</key>
@@ -1202,66 +1202,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m2xNtgBqB06IIRxtyAfFFGUvDO8=
+			3eyLg8E1rWB+oUupR1P6IdSAdq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			wRHh581yJevmNtzWLOsRQ4hZFf6G6xtW3DyORDtRZxE=
+			t+y9rir6fQS0VDJm7CAwEZciuZ3JHSFaRr3iXuDBKsw=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ndjm7nX9Nkrc12/y9oLRvz3hY+U=
+			v9BiGbvHgsd4x5RuNp+672owREc=
 			</data>
 			<key>hash2</key>
 			<data>
-			VI1pjpq4xg1itl4+70RlLe1Y1pjQQEW2zDJO5MsPP/M=
+			fR7rdFb/pwsSHi2wUEABERUw31vc5QRlUW7go+6Bnok=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0+q55V6kpnstO16E/yd5QjENzao=
+			bO/7U6twIow4urplIbGtZ0+TfcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dsk/v5eKmAudgSEm3r8zwHYr6nMCfTJng6tOhlYsTRI=
+			gGyC1KccLrkiQ0nF3Avt4i7Uv3p+XzNGOnobYGuyDIc=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gTjRiggUhqALWaoLh61UFy5Jiwo=
+			wQi2SHjvwb+ue0uXalZL0THKmi8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5aMSUHck9qqKl82uBLI7DEZxVqTQm7SizapkzjACMJ8=
+			CHvS8L4hA2N9Zaxsp9WHq9C135V+iti/j7PIJMScq1M=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0+q55V6kpnstO16E/yd5QjENzao=
+			bO/7U6twIow4urplIbGtZ0+TfcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dsk/v5eKmAudgSEm3r8zwHYr6nMCfTJng6tOhlYsTRI=
+			gGyC1KccLrkiQ0nF3Avt4i7Uv3p+XzNGOnobYGuyDIc=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+LyZ/cIIA/6mYMRhyWl3yKpfFi8=
+			N9YIzBV4MCzN1tyygNglkSeMxCA=
 			</data>
 			<key>hash2</key>
 			<data>
-			/WcDItWGMuQUQE4/kQbfh1sKFJKZ6G+5QmyVacL/eAQ=
+			19YI6buaS1PvMud017Tj15moURUHK2kOsY+QygGVDKA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
