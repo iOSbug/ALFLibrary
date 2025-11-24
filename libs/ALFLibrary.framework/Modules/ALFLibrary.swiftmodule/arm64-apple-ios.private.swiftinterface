@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name ALFLibrary
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ALFLibrary
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AFNetworking
 @_exported import ALFLibrary
 import AVFoundation
@@ -1247,9 +1247,9 @@ extension Swift.Array {
 public let DiagnoseTableRowHeight: CoreFoundation.CGFloat
 @objc @_inheritsConvenienceInitializers public class ALFLibManager : ALFLibrary.BaseNetManager {
   @objc public static let shared: ALFLibrary.ALFLibManager
-  @objc public static func sdkInit(_ appKey: Swift.String, appSecret: Swift.String, allyName: Swift.String, success: @escaping (() -> ()), failure: @escaping ((ALFLibrary.ErrorModel?) -> ()))
-  @objc public static func fastSignIn(_ allyToken: Swift.String, success: @escaping (() -> ()), failure: @escaping ((ALFLibrary.ErrorModel?) -> ()))
-  @objc public static func fastSignout(_ allyToken: Swift.String, success: @escaping (() -> ()), failure: @escaping ((ALFLibrary.ErrorModel?) -> ()))
+  @objc public static func sdkInit(_ appKey: Swift.String, appSecret: Swift.String, allyName: Swift.String, success: @escaping () -> (), failure: @escaping (ALFLibrary.ErrorModel?) -> ())
+  @objc public static func fastSignIn(_ allyToken: Swift.String, success: @escaping () -> (), failure: @escaping (ALFLibrary.ErrorModel?) -> ())
+  @objc public static func fastSignout(_ allyToken: Swift.String, success: @escaping () -> (), failure: @escaping (ALFLibrary.ErrorModel?) -> ())
   @objc public static func logout()
   @objc override dynamic public init()
   @objc deinit
@@ -2630,7 +2630,7 @@ public enum ProductNameType : Swift.String {
   @objc public func aisIsBlacklist(_ deviceId: Swift.String) -> Swift.Bool
   @objc public func aisNeedBindCloud(_ deviceId: Swift.String) -> Swift.Bool
   @objc public func aisIspLocking(_ deviceId: Swift.String) -> Swift.Bool
-  @objc public func getSnapshot(_ deviceId: Swift.String, url: Swift.String, complete: @escaping ((UIKit.UIImage?) -> ()))
+  @objc public func getSnapshot(_ deviceId: Swift.String, url: Swift.String, complete: @escaping (UIKit.UIImage?) -> ())
   @objc deinit
 }
 extension Foundation.Date {
@@ -3090,8 +3090,8 @@ extension ALFLibrary.TSDownloader {
 @objc @_inheritsConvenienceInitializers public class ALFQRBinderManager : ObjectiveC.NSObject {
   @objc public static let shared: ALFLibrary.ALFQRBinderManager
   @objc public var timeout: Swift.Double
-  @objc public func getToken(_ success: @escaping ((Swift.String) -> ()), failure: @escaping ((ALFLibrary.ErrorModel?) -> ()))
-  @objc public func checkBindStatus(_ token: Swift.String, success: @escaping ((ALFLibrary.DeviceBindStatus?) -> ()), failure: @escaping ((ALFLibrary.ErrorModel?) -> ()))
+  @objc public func getToken(_ success: @escaping (Swift.String) -> (), failure: @escaping (ALFLibrary.ErrorModel?) -> ())
+  @objc public func checkBindStatus(_ token: Swift.String, success: @escaping (ALFLibrary.DeviceBindStatus?) -> (), failure: @escaping (ALFLibrary.ErrorModel?) -> ())
   @objc override dynamic public init()
   @objc deinit
 }
@@ -3277,7 +3277,7 @@ extension Swift.RawRepresentable where Self : ALFLibrary._RawEnumProtocol {
 }
 public typealias CustomMappingKeyValueTuple = (Swift.Int, ALFLibrary.MappingPropertyHandler)
 public class MappingPropertyHandler {
-  public init(rawPaths: [Swift.String]?, assignmentClosure: ((Any?) -> (Any?))?, takeValueClosure: ((Any?) -> (Any?))?)
+  public init(rawPaths: [Swift.String]?, assignmentClosure: ((Any?) -> Any?)?, takeValueClosure: ((Any?) -> Any?)?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class HelpingMapper {
@@ -3456,19 +3456,11 @@ public protocol LogLevel {
   func myDescription(level: Swift.Int) -> Swift.String
 }
 public func CWLog<T>(_ message: T, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
-#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.Optional : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-#else
-extension Swift.Optional : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-#endif
 extension Swift.Dictionary : ALFLibrary.LogLevel {
   public var description: Swift.String {
     get
@@ -3806,7 +3798,7 @@ public let CellSubUIDistance: Swift.Int
 }
 public func CameraLocalizedString(_ key: Swift.String) -> Swift.String
 public func CommonCameraLocalizedString(_ key: Swift.String) -> Swift.String
-public let NavigationHeight: (CoreFoundation.CGFloat)
+public let NavigationHeight: CoreFoundation.CGFloat
 public let StatusBarHeight: CoreFoundation.CGFloat
 public let isIPhoneX: Swift.Bool
 public let IphoneXBottom: CoreFoundation.CGFloat
