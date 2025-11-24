@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALFLibrary'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A short description of ALFLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -32,8 +32,7 @@ TODO: Add long description of the pod here.
 
  s.subspec 'Core' do |ss|
 
-#  ss.vendored_frameworks = "libs/*.{framework}"
-  ss.source_files = 'ALFLibrary/Classes/**/*'
+  ss.vendored_frameworks = "libs/*.{framework}"
 
 #   s.source_files = 'ALFLibrary/Classes/**/*'
 
