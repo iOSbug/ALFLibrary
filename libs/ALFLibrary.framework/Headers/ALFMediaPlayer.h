@@ -51,166 +51,187 @@ typedef void (^snapShotDoneAction)(UIImage *image);
 -(instancetype)initWithFrame:(CGRect)frame showView:(UIView *)View deviceId:(NSString *)deviceId;
 
 /**
- *   静音
+ *   Mute
  */
 - (void)mute;
+
 /**
- *   当前是否静音
+ *   Is it muted
  */
 - (BOOL)isMute;
+
 /**
- *   当前取消静音
+ *   Cancel mute
  */
 - (void)cancelMute;
+
 /**
- *  开始对讲
+ *  Start talking
  */
 -(void)startTalk:(NSString *)cameraID;
+
 /**
- *  停止对讲
+ *  Stop talking
  */
 -(void)stopTalk:(NSString *)cameraID;
+
 /**
- *  是否正在录像
+ *  Is it recording
  */
 -(BOOL)isVideoRecording;
+
 /**
- *  开始直播录像
- *  @param     filePath                录像文件路径
+ *  Start live recording
+ *  @param     filePath                Video file path
  */
 - (int) startLocalRecordWithPath:(NSString *)filePath;
+
 /**
- *  停止直播录像
+ *  Stop live recording
  */
 - (int) stopLocalRecord;
+
 /**
- *  截图
- *  @param     path                截图路径
- *  @param     completion           uiimage 回调 （路径中也会保存，主要用于截图效果展示）
+ *  screenshot
+ *  @param     path                Screenshot path
+ *  @param     completion           uiimage callback (also saved in the path, mainly used for screenshot effect display)
  */
 - (void)takeSnapShot:(NSString *)path completion:(snapShotDoneAction)completion;
+
 /**
- *  停止播放
+ *  Stop playing
  */
 - (void)stop;
+
 /**
- *  销毁播放器（退出界面时调用）
+ *  Destroy the player
  */
 - (void)dismiss;
+
 /**
- *  播放网络视频
- *  @param     URLString                视频URL
+ *  Playing  videos
+ *  @param     URLString                video URL
  */
 - (void)playWithURL:(NSString *)URLString;
 
 
 /**
- *  播放告警视频
+ *  Play alarm video
  *  @param     alertModel          告警model
  */
 - (void)playAlertVideo:(ALFAlertModel *)alertModel;
 
 /**
- *  播放云存储视频
+ *  Playing cloud storage videos
  */
 - (void)playRecordVideo:(NSString *)deviceId record:(ALFCloudStorageModel *)reocrdModel;
 
 /**
- *  设置视频预览封面
- *  @param     image                封面图片
+ *  Set video preview cover
+ *  @param     image                Cover image
  */
 - (void)showPlaceHolderImage:(UIImage *)image;
+
 /**
- *  截图动画
- *  @param     snapImage                图片
+ *  Screenshot animation
+ *  @param     snapImage                image
  */
 - (void)showSnapAnimation:(UIImage *)snapImage;
+
 /**
- *  设置视频预览封面URL 和 视频URL（云存储）
- *  @param     imageUrl                封面图片URL
- *  @param     videoUrl                视频URL
+ *  Set the video preview cover URL and the video URL (cloud storage).
+ *  @param     imageUrl               Cover image URL
+ *  @param     videoUrl                Video URL
  */
 - (void)showPlaceHolderImage:(NSString *)imageUrl videoURL:(NSString *)videoUrl;
+
 /**
- *  播放本地视频文件
- *  @param     localPath                本地视频文件路径
+ *  Play local video files
+ *  @param     localPath                Local video file path
  */
 - (void)playWithLocalPath:(NSString *)localPath;
+
 /**
- *  开始直播
- *  @param     cameraID                设备ID
- *  @param     qualityNum              分辨率
+ *  Start live stream
+ *  @param     cameraID                deviceId
+ *  @param     qualityNum              resolution
  */
 - (void)playVideoWithCameraId:(NSString *)cameraID qualityNum:(NSString *)qualityNum;
+
 /**
- *  开始播放直播音频
- *  @param     cameraID                设备ID
+ *  Start playing live audio
+ *  @param     cameraID                deviceId
  */
 -(void)playAudioWithCameraId:(NSString *)cameraID;
 
+
 /**
- *  以下API videoRecordTpye ONLY！！！！
+ *  The following API videoRecordTpye ONLY! ! ! !
  *
  */
 /**
- *  videoRecord模式下 是否可以暂停
+ *  Can  pause in videoRecord mode
  *
  */
 - (BOOL)canPause;
+
 /**
- *  videoRecord模式下 暂停
+ *  Pause in videoRecord mode
  *
  */
 - (void)pause;
+
 /**
- *  videoRecord模式 停止播放
+ *  videoRecord mode Stop playback
  *
  */
 - (void)playstop;
+
 /**
- *  videoRecord模式 有视频输出
+ *  videoRecord mode has video output.
  *
  */
 - (BOOL)hasVideoOut;
+
 /**
- *  videoRecord模式 是否正在播放
+ *  Is videoRecord mode  playing
  *
  */
 - (BOOL)isPlaying;
+
 /**
- *  videoRecord模式下 开始播放
+ *  Start playing in videoRecord mode
  *
  */
 - (void)play;
+
 /**
- *  videoRecord模式 播放速率
+ *  videoRecord mode playback rate
  *
  */
 - (void)setRate:(float)rate;
 
 
 /**
- *  position 播放进度
- *
- *  YES  设置成功
- *  NO   设置失败
+ *  position Playback progress
  *
  */
 -(BOOL)playPosition:(CGFloat)position;
 
 /**
- *  talkMode 通话模式
+ *  talkMode (call mode)
  *
- *   仅在设备支持全双工的情况下设置
+ *   Set only if the device supports full-duplex.
  *
  */
 -(void)talkMode:(ALFMediaPlayerTalkMode)talkMode;
 
 
 /**
- *  talkMode 通话模式
+ *  talkMode (call mode)
  *
- *   ALFMediaPlayerTalkModeHalfDuplex: 按住说话（半双工）， ALFMediaPlayerTalkModeFullDuplex:通话模式（全双工）
+ *   ALFMediaPlayerTalkModeHalfDuplex:  hold to talk (half-duplex);
+ *   ALFMediaPlayerTalkModeFullDuplex: tap to talk mode (full-duplex).
  *
  */
 - (ALFMediaPlayerTalkMode)getTalkMode;

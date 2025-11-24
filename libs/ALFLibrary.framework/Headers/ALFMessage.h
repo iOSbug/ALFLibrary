@@ -22,43 +22,43 @@ typedef enum : NSUInteger {
 @interface ALFMessage : NSObject
 
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
 /**
- *    初始化推送参数
+ *    Initialize push
  */
 - (void)initPush;
 
 /**
- *    初始化推送参数，回调获取到的firebase的deivcetoken
+ *    Initialize push parameters and retrieve the Firebase device token via callback.
  */
 - (void)initPush:(nullable void (^)(NSString *))deviceToken;
 
 /**
- *    设置firebase的pushtoken
+ *    Set Firebase pushtoken
  */
 - (void)setFirebasePushToken:(NSString *)deviceToken;
 
 /**
- *    处理推送消息
+ *    Processing push messages
  *    @param     notiResponse               推送消息
  */
 - (void)handleApnsNotiReponse:(UNNotificationResponse *)notiResponse;
 
 /**
- *    获取设备告警消息概览
+ *    Get an overview of device alarm messages
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryAlertsSurvey:(nullable void (^)(NSArray<ALFAlertSurveyModel *> *))success
                   failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 获取含有告警视频的日历小蓝点
-/// @param deviceId 设备 ID
+/// Get the blue calendar dot containing alarm videos.
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)fetchAlertsCalendar:(NSString *)deviceId
@@ -67,9 +67,9 @@ typedef enum : NSUInteger {
 
 
 
-/// 获取告警列表
-/// @param deviceId 设备ID
-/// @param cdate 摄像头时区的日期，20180710
+/// Get Alarm List
+/// @param deviceId deviceId
+/// @param cdate The date in the camera's time zone,  20180710
 /// @param success success
 /// @param failure failure
 - (void)getAlertsList:(NSString *)deviceId
@@ -78,10 +78,10 @@ typedef enum : NSUInteger {
               failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 删除告警
-/// @param deviceId 设备ID
-/// @param cdate 摄像头时区的日期，20180710
-/// @param ctss 批量删除
+/// Delete alerts
+/// @param deviceId deviceId
+/// @param cdate The date in the camera's time zone,  20180710
+/// @param ctss Batch delete
 /// @param success success
 /// @param failure failure
 - (void)deleteAlert:(NSString *)deviceId

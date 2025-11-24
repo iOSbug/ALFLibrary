@@ -65,26 +65,26 @@ typedef enum : NSUInteger {
 @interface ALFDevice : NSObject
 @property (weak)                        id<ALFDeviceDelegate>   delegate;
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
 
 /**
- *    获取设备列表
+ *    Get device list
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryDevices:(nullable void (^)(NSArray<ALFDeviceInfoModel *> *))success
              failure:(nullable void (^)(ALFError *))failure;
 
 
 /**
- *    获取单个设备详情
+ *    Get details of a  device
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryDeviceInfo:(NSString *)deviceId
                 success:(nullable void (^)(void))success
@@ -92,7 +92,7 @@ typedef enum : NSUInteger {
 
 
 /**
- *    在线状态
+ *    Online status
  *
  */
 -(ALFDeviceOnlineStatus)onlineStatusWithDeviceId:(NSString *)deviceId;
@@ -100,21 +100,21 @@ typedef enum : NSUInteger {
 
 
 /**
- *  对设备进行P2P连线（状态回掉请注册ALFDeviceDelegate）
- *  @param     deviceId              摄像头id
+ *  Establish a P2P connection to the device (to revert the status, please register ALFDeviceDelegate).
+ *  @param     deviceId              deviceId
  */
 -(void)connectedWithDeviceId:(NSString *)deviceId;
 
 
 /**
- *    强制重联设备
- *    @param     deviceId              摄像头id
+ *    Forced reconnection equipment
+ *    @param     deviceId              deviceId
  */
 -(void)forceReConectedWithCameraID:(NSString *)deviceId;
 
 
 /**
- *    重置所有P2P连接
+ *    Reset all P2P connections
  *
  */
 -(void)resetConnection;
@@ -124,51 +124,52 @@ typedef enum : NSUInteger {
 
 
 /**
- *    网络环境发生变化请调用
+ *    Please call if the network environment changes.
  *
  */
 -(void)networkChangeAction;
+
 /**
- *    查询设备连接状态
+ *    Query device connection status
  *
  */
 -(ALFDeviceConnectStatus)statusForCamera:(NSString *)deviceId;
 
 /**
- *    断开设备连接
- *    @param     deviceId              摄像头id
+ *    Disconnect device
+ *    @param     deviceId              deviceId
  */
 -(void)disConnectedWithCamID:(NSString *)deviceId;
 
 
 /**
- *    PTZControl单步移动云台
- *    @param     deviceId              摄像头id
+ *    PTZControl Single-Step Mobile Gimbal
+ *    @param     deviceId              deviceId
  */
 - (void)cameraPtzControl:(NSString *)deviceId direction:(ALFDevicePTZControlDirection)direct;
 
 /**
- *    PTZControl连续移动开始
- *    @param     deviceId              摄像头id
+ *    PTZControl Continuous Movement Start
+ *    @param     deviceId              deviceId
  */
 - (void)cameraPtzContinueControl:(NSString *)deviceId direction:(ALFDevicePTZControlDirection)direct;
 
 /**
- *    PTZControl连续移动结束
- *    @param     deviceId              摄像头id
+ *    PTZControl continuous movement ends
+ *    @param     deviceId              deviceId
  */
 - (void)cameraPtzControlEnd:(NSString *)deviceId;
 
 /**
- *    PTZControl回正
- *    @param     deviceId              摄像头id
+ *    PTZControl reset
+ *    @param     deviceId              deviceId
  */
 - (void)cameraPtzResetControl:(NSString *)deviceId;
 
 
 /**
- *    获取视频分辨率
- *    @param     deviceId              摄像头id
+ *    Get video resolution
+ *    @param     deviceId              deviceId
  */
 
 - (NSArray *)getResolutions:(NSString *)deviceId;
@@ -176,36 +177,34 @@ typedef enum : NSUInteger {
 - (NSString *)getDefaultResolution:(NSString *)deviceId;
 
 /**
- *    改变视频分辨率
- *    @param     deviceId              摄像头id
- *    @param     resoNum              分辨率参数
+ *    Change video resolution
+ *    @param     deviceId              deviceId
+ *    @param     resoNum              Resolution
  */
 - (void)changeResolution:(NSString *)deviceId quilt:(NSString *)resoNum;
 
 
 
 /**
- *    初始化远程TF卡
- *    @param     deviceId              摄像头id
- *    YES :成功
- *    NO: 失败
+ *    Initialize remote TF card
+ *    @param     deviceId              deviceId
  */
 - (void)initRemoteTF:(NSString *)deviceId
              success:(nullable void (^)(NSString *))success
              failure:(nullable void (^)(ALFError *))failure;
 
 /**
- *    强制断开设备
- *    @param     deviceId              摄像头id
+ *    Force disconnect device
+ *    @param     deviceId              deviceId
  */
 - (void)forceDisconenct:(NSString *)deviceId;
 
 
 /**
- *    获取云存储日历列表
+ *    Get cloud storage calendar list
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryCloudStorageCalendarMasterUid:(NSString*)masterUid
                                   deviceId:(NSString *)deviceId
@@ -213,10 +212,10 @@ typedef enum : NSUInteger {
                                    failure:(nullable void (^)(ALFError *))failure;
 
 /**
- *    获取云存储列表
+ *    Get cloud storage list
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryCloudStorageVideoListMasterUid:(NSString*)masterUid
                                    deviceId:(NSString *)deviceId
@@ -227,10 +226,10 @@ typedef enum : NSUInteger {
 
 
 /**
- *    获取TFCard日历列表
- *     !!!!只有当remoteTFCardInit 成功后才有效
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    Get TFCard calendar list
+ *     This is only effective after remoteTFCardInit succeeds.
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryTFCardCalendarDeviceId:(NSString *)deviceId
                             success:(nullable void (^)(NSArray<NSString *> *))success
@@ -239,10 +238,10 @@ typedef enum : NSUInteger {
 
 
 /**
- *    获取TFCard视频列表
+ *    Get TFCard video list
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryTFCardVideoListDeviceId:(NSString *)deviceId
                           dayStartTs:(double)dayStartTs
@@ -254,25 +253,25 @@ typedef enum : NSUInteger {
 
 
 /**
- *    获取告警日历列表
+ *    Get Alarm Calendar List
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryAlarmCalendarDeviceId:(NSString *)deviceId
                             success:(nullable void (^)(NSArray<NSString *> *))success
                             failure:(nullable void (^)(ALFError *))failure;
 
 /**
- *    获取告警列表
+ *    Get Alarm List
  *
- *     @param     cdate                日期
- *     @param     limit                获取数量 -1:全部
- *     @param     isToday               是否为今天   0 or 1
- *     @param     isTodayFirst          是否今天第一次请求 0 or 1
- *     @param     ctime          当前日期的结束 eg:2022116235959
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *     @param     cdate                date
+ *     @param     limit                limit（ -1: All）
+ *     @param     isToday               Is it today  (0 or 1)
+ *     @param     isTodayFirst          Is this the first request of the day  (0 or 1)
+ *     @param     ctime          End of current date, e.g., 2022116235959
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  *
  */
 -(void)queryAlarmListWithDeviceId:(NSString *)deviceId
@@ -285,13 +284,13 @@ typedef enum : NSUInteger {
                           failure:(nullable void (^)(ALFError *))failure;
 
 /**
- *    删除云存储视频
- *云存储时间格式：20221116235959000 精度到毫秒
- *     @param     start                开始
- *     @param     end                结束
- *     @param     relDays               整天删除的开始和结束
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    Delete cloud storage videos
+ *  Cloud storage time format: 20221116235959000, accurate to milliseconds.
+ *     @param     start                start
+ *     @param     end                    end
+ *     @param     relDays               The beginning and end of deleting all day
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  *
  */
 - (void)deleteCloudVideoList:(NSString * _Nonnull)deviceId
@@ -304,22 +303,20 @@ typedef enum : NSUInteger {
 
 
 /**
- *    获取视角
+ *    Get view angles
  *
  */
-
 - (NSArray<ALFViewAngleModel *> *)getViewAngles:(NSString *)deviceId;
 
 
 /**
- *    添加视角
- *     @param     angleIndex           需要添加的视角的索引
- *     @param     image                预览图
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    Add view angle
+ *     @param     angleIndex           view angle id
+ *     @param     image                Preview image
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  *
  */
-
 - (void)viewAngleAdd:(NSString *)deviceId
           angleIndex:(NSString *)angleIndex
         previewImage:(UIImage *)image
@@ -327,10 +324,10 @@ typedef enum : NSUInteger {
              failure:(void (^)(ALFError * _Nonnull))failure;
 
 /**
- *    删除视角
- *     @param     angleIndex           需要删除的视角的索引
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    Delete view angle
+ *     @param     angleIndex           view angle id
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  *
  */
 - (void)deleViewAngle:(NSString *)deviceId
@@ -340,8 +337,8 @@ typedef enum : NSUInteger {
 
 
 /**
- *    转向指定视角
- *     @param     angleIndex           需要转向的视角的索引
+ *    Turn to the  view angle
+ *     @param     angleIndex           view angle id
  *
  */
 - (void)moveToViewAngle:(NSString *)deviceId
@@ -349,32 +346,32 @@ typedef enum : NSUInteger {
 
 
 /**
- *    报警是否打开
+ *    Is the alarm turned on
  *
  */
 - (BOOL)sirenIsOn:(NSString *)deviceId;
 
 
 /**
- *    人形跟追是否打开
+ *    Is humanoid tracking enabled
  *
  */
 - (BOOL)triggerByMotionIsOn:(NSString *)deviceId;
 
 
 /**
- *    白光灯是否打开
+ *    Is the white light on
  *
  */
 - (BOOL)lightIsOn:(NSString *)deviceId;
 
 
 /**
- *    删除告警
- *     @param     cdate           日期
- *     @param     ctss           需要删除告警的cts 数组
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    Delete alerts
+ *     @param     cdate           date
+ *     @param     ctss           The CTS array that needs to have its alarms deleted.
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  *
  */
 - (void)deleteAlarms:(NSString *)deviceId
@@ -385,9 +382,9 @@ typedef enum : NSUInteger {
 
 
 /**
- *    获取预览图
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    Get preview image
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  *
  */
 - (void)getSnapshot:(NSString *)deviceId
@@ -396,25 +393,25 @@ typedef enum : NSUInteger {
             failure:(void (^)(ALFError * _Nonnull))failure;
 
 /**
- *    设备类型
+ *    Device group
  */
 - (ALFDeviceGroup)getDeviceGroup:(NSString *)deviceId;
 
 /**
- *    是否是黑名单设备
+ *    Is it a blacklisted device
  */
 - (BOOL)isBlacklist:(NSString *)deviceId;
 
 
 /**
- *    是否是黑名单设备
+ *    Is it a blacklisted device
  */
 - (BOOL)needBindCloudStorage:(NSString *)deviceId;
 
 
 
 /**
- *    是否锁定
+ *    ISP locking
  */
 - (BOOL)isISPLocking:(NSString *)deviceId;
 

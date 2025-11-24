@@ -25,16 +25,16 @@ typedef enum : NSUInteger {
 @interface ALFBinder : NSObject
 
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
 
 /**
- *    获取配网token
+ *    Get the bind token
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)getToken:(nullable void (^)(NSString *))success
          failure:(nullable void (^)(ALFError *))failure;
@@ -53,10 +53,10 @@ typedef enum : NSUInteger {
                failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 二维码配网
-/// @param token 配网token，从getToken获取
-/// @param timeout 配网超时时长 (秒)
-/// @param success 回调当前绑定的设备 ID
+/// QR code network configuration
+/// @param token  bind Token
+/// @param timeout  timeout(s)
+/// @param success Successful callback
 /// @param failure failure
 - (void)startQRWiFiConfig:(NSString *)token
                   timeout:(NSTimeInterval)timeout

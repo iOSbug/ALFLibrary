@@ -67,34 +67,40 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, ALFLoginStatus) {
-    AJLoginExpire          = 1008,    ///登录超期（需要app退到登录页面）
-    AJLoginKickout         = 1011,    ///单点登录（被踢）
+    AJLoginExpire          = 1008,    ///Login expired (requires the app to redirect to the login page)
+    AJLoginKickout         = 1011,    ///Single sign-on (kicked out)
 };
 
 @interface ALFLib : NSObject
 
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
-///用户是否已登录
+///Is the user logged in
 @property(nonatomic,readonly) BOOL isLogin;
 
-///当前用户的账号信息，登录时的account
+///Current user's account information, the account used during login
 @property(nonatomic,strong,readonly)NSString *userAccount;
 
+/**
+ *   set as a test environment
+ */
++ (void)setTestbed:(BOOL)testEnvirment;
 
 /**
- *    核心库必须调用的方法，通过SDK发布方提供的鉴权数据正常完成初始化
+ *    The methods that the core library must call successfully complete initialization using the authentication data provided by the SDK publisher.
  *
- *    @param     securityID          SDK库鉴权ID
- *    @param     securityKey       SDK库鉴权码
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     securityID          SDK Library Authentication ID
+ *    @param     securityKey       SDK library authentication code
+ *    @param     allyName              Access vendors
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 + (void)asyncInit:(NSString *)securityID
       securityKey:(NSString *)securityKey
+         allyName:(NSString *)allyName
           success:(nullable void (^)(void))success
           failure:(nullable void (^)(ALFError *))failure;
 

@@ -13,16 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ALFCloud : NSObject
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
 
 /**
- *    获取云存套餐列表
+ *    Get cloud storage package list
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)queryCloudOrderList:(nullable void (^)(NSArray<ALFCloudOrderModel *> *))success
                     failure:(nullable void (^)(ALFError *))failure;
@@ -30,10 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *    绑定云存套餐
+ *    Binding cloud storage package
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)joinCloudOrder:(NSString *)deviceId
                orderId:(NSString *)orderId
@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *    替换云存套餐
+ *    Replace cloud storage plan
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)replacCloudOrder:(NSString *)deviceId
           replceDeviceId:(NSString *)replceDeviceId

@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
-/// 修改主设备的别名 （暂不使用，修改设备名称可直接使用changeUACDeviceAliasName）
-/// @param deviceId 设备 ID
+/// Modify the alias of the primary device (not used yet; to change the device name, you can directly use changeUACDeviceAliasName).
+/// @param deviceId deviceId
 /// @param aliasName 别名
 /// @param success success
 /// @param failure failure
@@ -27,9 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
                       failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 固件升级
-/// @param deviceId  设备 ID
-/// @param version 设备当前版本号 --> camera.base.newFwVersion
+/// Firmware upgrade
+/// @param deviceId  deviceId
+/// @param version  Current device version number --> camera.base.newFwVersion
 /// @param success success
 /// @param failure failure
 - (void)firmwareUpgrade:(NSString *)deviceId
@@ -40,8 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 解绑设备
-/// @param deviceId 设备 ID
+/// Unbind device
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)unbindDevice:(NSString *)deviceId
@@ -50,9 +50,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 图像旋转设置
-/// @param deviceId  设备 ID
-/// @param orientation  0 - 正常, 1 - 上下倒置, 2- 左右镜像, 3 - 镜像+倒置
+/// Image rotation settings
+/// @param deviceId  deviceId
+/// @param orientation  0 - Normal, 1 - Upside down, 2 - Mirror image, 3 - Mirror image + Upside down
 /// @param success success
 /// @param failure failure
 - (void)orientationConfig:(NSString *)deviceId
@@ -61,9 +61,9 @@ NS_ASSUME_NONNULL_BEGIN
                   failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 照明频率设置
-/// @param deviceId  设备 ID
-/// @param freqValue  照明频率: 50Hz/60Hz,缺省值:50Hz, 北美地区-60Hz, 欧洲-50Hz
+/// Lighting frequency settings
+/// @param deviceId  deviceId
+/// @param freqValue  Lighting frequency: 50Hz/60Hz, default: 50Hz, North America - 60Hz, Europe - 50Hz
 /// @param success success
 /// @param failure failure
 - (void)lightingFreqConfig:(NSString *)deviceId
@@ -71,10 +71,10 @@ NS_ASSUME_NONNULL_BEGIN
                    success:(nullable void (^)(void))success
                    failure:(nullable void (^)(ALFError *))failure;
 
-/// 音频设置
-/// @param deviceId 设备 ID
-/// @param micEnable 麦克风开关 0 - 关，1 - 开
-/// @param speakerVolume 麦克风音量 (0 - 100)
+/// Audio settings
+/// @param deviceId deviceId
+/// @param micEnable  Microphone switch: 0 - Off, 1 - On
+/// @param speakerVolume Microphone volume (0 - 100)
 /// @param success success
 /// @param failure failure
 - (void)microphoneSetting:(NSString *)deviceId
@@ -84,9 +84,9 @@ NS_ASSUME_NONNULL_BEGIN
                   failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 开启关闭指示灯
-/// @param deviceId 设备 ID
-/// @param enable  指示灯开关 0 - 关，1 - 开
+/// On/Off Indicator Light
+/// @param deviceId deviceId
+/// @param enable  Indicator light switch: 0 - Off, 1 - On
 /// @param success success
 /// @param failure failure
 - (void)indicatorLightConfig:(NSString *)deviceId
@@ -94,9 +94,9 @@ NS_ASSUME_NONNULL_BEGIN
                      success:(nullable void (^)(void))success
                      failure:(nullable void (^)(ALFError *))failure;
 
-/// 自动跟踪
-/// @param deviceId 设备 ID
-/// @param toggle  自动跟踪开关 off - 关闭，on - 开启
+/// Automatic tracking
+/// @param deviceId deviceId
+/// @param toggle  Automatic tracking switch: off - off, on - on
 /// @param success success
 /// @param failure failure
 - (void)autoTrackConfig:(NSString *)deviceId
@@ -105,18 +105,18 @@ NS_ASSUME_NONNULL_BEGIN
                 failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 隐私模式配置 - 定时休眠
-/// @param deviceId 设备 ID
-/// @param enable 隐私模式总开关  0 - 关，1 - 开
-/// @param wholeDayEnable 全天候开关  0 - 关，1 - 开
-/// @param enable1 自定义时间1开关  0 - 关，1 - 开
-/// @param startTime1 自定义1开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime1 自定义1结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays1 自定义1重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
-/// @param enable2 自定义2开关  0 - 关，1 - 开
-/// @param startTime2 自定义2开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime2 自定义2结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays2 自定义2重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
+/// Privacy Mode Configuration - Scheduled Sleep
+/// @param deviceId deviceId
+/// @param enable Master switch 0 - Off, 1 - On
+/// @param wholeDayEnable 24/7 switch: 0 - Off, 1 - On
+/// @param enable1 Custom time switch: 0 - Off, 1 - On
+/// @param startTime1 Custom start time 1 (e.g., passing 093000 means 09:30:00)
+/// @param endTime1  Custom end time (e.g., 173000 means 17:30:00)
+/// @param weekDays1 Customize the repeating day (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
+/// @param enable2  Custom 2-switch: 0 - Off, 1 - On
+/// @param startTime2 Custom start time 2 (e.g., passing 093000 means 09:30:00)
+/// @param endTime2 Custom end time 2 (e.g., sending 173000 means 17:30:00)
+/// @param weekDays2 Customize two repeating days (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
 /// @param success success
 /// @param failure failure
 - (void)autoHibernateConfig:(NSString *)deviceId
@@ -134,10 +134,10 @@ NS_ASSUME_NONNULL_BEGIN
                     failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 庭院灯灯光控制
-/// @param deviceId 设备ID
-/// @param toggle 开关：开 - "1"，关 - "0"
-/// @param brightness 亮度 1-100
+/// Courtyard light control
+/// @param deviceId deviceId
+/// @param toggle Switch: On - "1", Off - "0"
+/// @param brightness Brightness 1-100
 /// @param success success
 /// @param failure failure
 - (void)floodlightControl:(NSString *)deviceId
@@ -147,19 +147,19 @@ NS_ASSUME_NONNULL_BEGIN
                   failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 声音告警监测配置
-/// @param deviceId 设备 ID
-/// @param enable 隐私模式总开关  0 - 关，1 - 开
-/// @param susceptiveness 灵敏度等级  0 ~ 5
-/// @param wholeDayEnable 全天候开关  0 - 关，1 - 开
-/// @param enable1 自定义时间1开关  0 - 关，1 - 开
-/// @param startTime1 自定义1开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime1 自定义1结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays1 自定义1重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
-/// @param enable2 自定义2开关  0 - 关，1 - 开
-/// @param startTime2 自定义2开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime2 自定义2结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays2 自定义2重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
+/// Sound alarm monitoring configuration
+/// @param deviceId deviceId
+/// @param enable  Master switch 0 - Off, 1 - On
+/// @param susceptiveness Sensitivity level 0 ~ 5
+/// @param wholeDayEnable 24/7 switch: 0 - Off, 1 - On
+/// @param enable1 Custom time switch: 0 - Off, 1 - On
+/// @param startTime1 Custom start time 1 (e.g., passing 093000 means 09:30:00)
+/// @param endTime1 Custom end time (e.g., 173000 means 17:30:00)
+/// @param weekDays1 Customize the repeating day (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
+/// @param enable2 Custom 2-switch: 0 - Off, 1 - On
+/// @param startTime2 Custom start time 2 (e.g., passing 093000 means 09:30:00)
+/// @param endTime2 Custom end time 2 (e.g., sending 173000 means 17:30:00)
+/// @param weekDays2 Customize two repeating days (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
 /// @param success success
 /// @param failure failure
 - (void)soundMonitorConfig:(NSString *)deviceId
@@ -178,10 +178,13 @@ NS_ASSUME_NONNULL_BEGIN
                    failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 隐私区域设置
-/// @param deviceId 设备 ID
-/// @param enable 启用隐私区域开关 0 - 关，1 - 开
-/// @param 隐私区域位置 ["x0,y0,x1,y1"]，区间：整体最大 --> ["0,0,10000,10000"]
+/// Privacy settings
+/// @param deviceId deviceId
+/// @param enable Enable privacy zone switch: 0 - Off, 1 - On
+/// @param x0   Location coordinates of privacy area
+/// @param y0  Location coordinates of privacy area
+/// @param x1 Location coordinates of privacy area
+/// @param y1 Location coordinates of privacy area
 /// @param success success
 /// @param failure failure
 - (void)privateRegionConfig:(NSString *)deviceId
@@ -195,12 +198,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 时区配置
-/// @param deviceId 设备 ID
-/// @param tzName 地区名称 例: 'Asia/Shanghai'
-/// @param tzValue 时区时间 例: -480
-/// @param autoAdjust 若从设备配置选择时区进行配置, 则autoAdjust = 0;  若绑定时, app获取手机操作系统时区(tzName,tzValue)对设备进行配置, 需autoAdjust = 1
-/// @param tzDistrict 地区或城市, 统一使用城市: en 名称; app上按本地语言名称, 存储使用en名
+/// Timezone configuration
+/// @param deviceId deviceId
+/// @param tzName Region name, e.g., 'Asia/Shanghai'
+/// @param tzValue Time zone, e.g., -480
+/// @param autoAdjust If the time zone is selected from the device settings, then `autoAdjust = 0`; if the app obtains the phone's operating system time zone (tzName, tzValue) to configure the device during binding, then `autoAdjust = 1`.
+/// @param tzDistrict For regions or cities, use the city name (en name); on the app, use the local language name, and store it using the en name.
 /// @param success success
 /// @param failure failure
 - (void)timezoneConfig:(NSString *)deviceId
@@ -211,7 +214,7 @@ NS_ASSUME_NONNULL_BEGIN
                success:(nullable void (^)(void))success
                failure:(nullable void (^)(ALFError *))failure;
 
-/// 时区列表
+/// Time zone list
 /// @param success success
 /// @param failure failure
 - (void)getTimezonelist:(nullable void (^)(NSArray<ALFTimezoneModel *> *))success
@@ -219,11 +222,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 移动检测灵敏度等级和检测区域配置langge
-/// @param deviceId 设备 ID
-/// @param susceptiveness 灵敏度等级  0 ~ 5
-/// @param fullViewport 是否全屏 0 - 是，1 - 否
-/// @param  检测区域  ["'x0,y0,x1,y1"]，区间：整体最大 --> ["0,0,10000,10000"]
+/// Motion detection sensitivity level and detection area configuration
+/// @param deviceId deviceId
+/// @param susceptiveness Sensitivity level 0 ~ 5
+/// @param fullViewport Fullscreen mode: 0 - Yes, 1 - No
+/// @param x0   Detection area coordinates
+/// @param y0  Detection area coordinates
+/// @param x1 Detection area coordinates
+/// @param y1 Detection area coordinates
 /// @param success success
 /// @param failure failure
 - (void)detectionsConfig:(NSString *)deviceId
@@ -237,13 +243,13 @@ NS_ASSUME_NONNULL_BEGIN
                  failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 人形侦测
-/// @param deviceId 设备ID
-/// @param humanoid 人形 0 - 关闭，1 - 开启
-/// @param package  包裹 0 - 关闭，1 - 开启
-/// @param pet 宠物  0 - 关闭，1 - 开启
-/// @param vehicle  车辆 0 - 关闭，1 - 开启
-/// @param pnmO1 其他  0 - 关闭，1 - 开启
+/// Human detection
+/// @param deviceId deviceId
+/// @param humanoid Humanoid 0 - Off, 1 - On
+/// @param package  Package 0 - Closed, 1 - Open
+/// @param pet Pet 0 - Off, 1 - On
+/// @param vehicle  Vehicle 0 - Off, 1 - On
+/// @param pnmO1 Other 0 - Off, 1 - On
 /// @param success success
 /// @param failure failure
 - (void)alarmRekConfig:(NSString *)deviceId
@@ -256,19 +262,19 @@ NS_ASSUME_NONNULL_BEGIN
                failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 移动告警 设置
-/// @param deviceId 设备 ID
-/// @param enable 0 - 关，1 - 开
-/// @param genAlarmThumb 富文本通知，0 - 关，1 - 开
-/// @param wholeDayEnable 全天候时间开关 0 - 关，1 - 开
-/// @param enable1 自定义时间表1开关 0 - 关，1 - 开
-/// @param startTime1 自定义1开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime1 自定义1结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays1 自定义1重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
-/// @param enable2 自定义2开关  0 - 关，1 - 开
-/// @param startTime2 自定义2开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime2 自定义2结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays2 自定义2重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
+/// Motion Alarm Settings
+/// @param deviceId deviceId
+/// @param enable 0 - Off, 1 - On
+/// @param genAlarmThumb Rich text notifications: 0 - Off, 1 - On
+/// @param wholeDayEnable 24/7 time switch: 0 - Off, 1 - On
+/// @param enable1 Custom schedule 1 switch: 0 - Off, 1 - On
+/// @param startTime1 Custom start time 1 (e.g., passing 093000 means 09:30:00)
+/// @param endTime1 Custom end time (e.g., 173000 means 17:30:00)
+/// @param weekDays1 Customize the repeating day (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
+/// @param enable2 Custom 2-switch: 0 - Off, 1 - On
+/// @param startTime2 Custom start time 2 (e.g., passing 093000 means 09:30:00)
+/// @param endTime2 Custom end time 2 (e.g., sending 173000 means 17:30:00)
+/// @param weekDays2 Customize two repeating days (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
 /// @param success success
 /// @param failure failure
 - (void)moveMonitorConfig:(NSString *)deviceId
@@ -288,13 +294,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 灯光与夜视配置
-/// @param deviceId 设备ID
-/// @param toggle 'on' | 'off', // 此值，从 floodlightConfig.toggle 获取
-/// @param brightness 亮度
-/// @param enable 自动夜视是否开启  0 - 关，1 - 开
-/// @param lightingDur 延迟 后自动关闭时间
-/// @param triggersOn action-detect(智能灯光模式)，night-mode(夜晚全彩模式)，timing(定时灯光模式)， infrared(自动红外模式)，lightOff(全关闭模式)
+/// Lighting and night vision configuration
+/// @param deviceId deviceId
+/// @param toggle 'on' | 'off', floodlightConfig.toggle
+/// @param brightness brightness
+/// @param enable Automatic night vision enabled: 0 - Off, 1 - On
+/// @param lightingDur Automatic shutdown time after delay
+/// @param triggersOn Action-detect (intelligent lighting mode), Night-mode (full-color night mode), Timing (timed lighting mode), Infrared (automatic infrared mode), LightOff (fully off mode)
 /// @param success success
 /// @param failure failure
 - (void)floodlightConfig:(NSString *)deviceId
@@ -308,31 +314,31 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 本地存储配置
-/// @param deviceId 设备ID
-/// @param enable 本地存储总开关  0 - 关，1 - 开
-/// @param nasPath nas 路径 localStorage.nasPath
+/// Local storage configuration
+/// @param deviceId deviceId
+/// @param enable Local storage master switch: 0 - Off, 1 - On
+/// @param nasPath nas  localStorage.nasPath
 /// @param playUrlRoot  localStorage.playUrlRoot (http://{netwowrkConfig.local_ip}/api)
-/// @param quality 视频质量
+/// @param quality Video quality
 /// @param storageType localStorage.storageType
-/// @param triggerMode  0 - 缺省(移动或声音侦测), 1-24H
-/// @param writeMode 当空间存满时，存储模式 ( 1 - 覆盖最早存储，2 - 停止存储 )
-/// @param wholeDayEnable 全天候时间开关 0 - 关，1 - 开
-/// @param wholeStartTime 全天候开始时间 ( 000000 )
-/// @param wholeEndTime 全天候结束时间 ( 235959 )
-/// @param wholeWeekDays 全天候星期配置 ( [1, 2, 3, 4, 5, 6, 7] - > 每天 )
+/// @param triggerMode  0 - Default (motion or sound detection), 1-24H
+/// @param writeMode When the space is full, the storage mode is (1 - overwrite the oldest storage, 2 - stop storing).
+/// @param wholeDayEnable 24/7 time switch: 0 - Off, 1 - On
+/// @param wholeStartTime All-day start time (000000)
+/// @param wholeEndTime End time for all hours (235959)
+/// @param wholeWeekDays 24/7 Sunday Schedule ([1, 2, 3, 4, 5, 6, 7] -> Daily)
 /// @param wholeFormat localStorConfig.policies[0].format
-/// @param enable1 自定义时间表1开关 0 - 关，1 - 开
-/// @param startTime1 自定义1开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime1 自定义1结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays1 自定义1重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
-/// @param format1 传 localStorConfig.policies[1].format
-/// @param enable2 自定义2开关  0 - 关，1 - 开
-/// @param startTime2 自定义2开始时间 (例：传093000，指 09: 30: 00)
-/// @param endTime2 自定义2结束时间 (例：传173000，指 17: 30: 00)
-/// @param weekDays2 自定义2重复天 ( 例：@[@"1", @"3", @"5", @"6"]，周一、三、五、六 )
-/// @param format2 传 localStorConfig.policies[2].format
-/// @param ecoRecordDurationLimit 仅电池供电时最长录制时长 ( [10, 20, 30, 40, 50, 60] ) 秒
+/// @param enable1 Custom schedule 1 switch: 0 - Off, 1 - On
+/// @param startTime1 Custom start time 1 (e.g., passing 093000 means 09:30:00)
+/// @param endTime1 Custom end time (e.g., 173000 means 17:30:00)
+/// @param weekDays1 Customize the repeating day (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
+/// @param format1  localStorConfig.policies[1].format
+/// @param enable2 Custom 2-switch: 0 - Off, 1 - On
+/// @param startTime2 Custom start time 2 (e.g., passing 093000 means 09:30:00)
+/// @param endTime2 Custom end time 2 (e.g., sending 173000 means 17:30:00)
+/// @param weekDays2 Customize two repeating days (e.g., @[@"1", @"3", @"5", @"6"], Monday, Wednesday, Friday, Saturday)
+/// @param format2  localStorConfig.policies[2].format
+/// @param ecoRecordDurationLimit Maximum recording time on battery only ([10, 20, 30, 40, 50, 60]) seconds
 /// @param success success
 /// @param failure failure
 - (void)localStorageSetting:(NSString *)deviceId
@@ -364,8 +370,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 格式化 TF 卡
-/// @param deviceId 设备 ID
+/// Format TF card
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)formatTfCard:(NSString *)deviceId
@@ -374,8 +380,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 设备截取画面
-/// @param deviceId 设备 ID
+/// Captured by device
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)setSnapshot:(NSString *)deviceId
@@ -384,9 +390,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 摄像机开关 ON/OFF
-/// @param deviceId 设备 ID
-/// @param enable 开关 0 - 关，1 - 开
+/// Camera switch ON/OFF
+/// @param deviceId deviceId
+/// @param enable Switch 0 - Off, 1 - On
 /// @param success success
 /// @param failure failure
 - (void)hibernateConfig:(NSString *)deviceId
@@ -396,8 +402,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 恢复出厂设置
-/// @param deviceId 设备 ID
+/// Restore factory settings
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)retoreFactory:(NSString *)deviceId
@@ -406,8 +412,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 重启设备
-/// @param deviceId 设备 ID
+/// Restart the device
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)restart:(NSString *)deviceId
@@ -415,9 +421,9 @@ NS_ASSUME_NONNULL_BEGIN
         failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 报警开关控制
-/// @param deviceId 设备 ID
-/// @param isOn  0:关 1:开
+/// Alarm switch control
+/// @param deviceId deviceId
+/// @param isOn  0: Off 1: On
 /// @param success success
 /// @param failure failure
 - (void)sirenControl:(NSString *)deviceId
@@ -427,9 +433,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 移动触发报警开关控制
-/// @param deviceId 设备 ID
-/// @param isOn  0:关 1:开
+/// Movement-triggered alarm switch control
+/// @param deviceId deviceId
+/// @param isOn  0: Off 1: On
 /// @param success success
 /// @param failure failure
 - (void)sirenByMotionCtrl:(NSString *)deviceId
@@ -438,7 +444,7 @@ NS_ASSUME_NONNULL_BEGIN
                   failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 加载诊断服务器地址
+/// Load diagnostic server address
 - (NSArray<ALFDiagnoseModel *>*)loadDiagnoseServiceUrls;
 
 @end

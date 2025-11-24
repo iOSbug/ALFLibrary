@@ -15,26 +15,26 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ALFGroup : NSObject
 
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
 
 /**
- *    政企分组列表
+ *   Enterprise Group List
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)fetchGroupList:(nullable void (^)(ALFGroupsModel *))success
                failure:(nullable void (^)(ALFError *))failure;
 
 
 /**
- *    政企分组添加
+ *    Enterprise Group Add
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 
 - (void)groupAdd:(NSString *)groupName
@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *    政企分组删除
+ *    Enterprise Group Delete
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 
 - (void)groupDel:(NSArray *)gids
@@ -55,10 +55,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *    政企分组重命名
+ *    Enterprise Group Rename
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 
 - (void)groupRename:(NSString *)gid
@@ -68,10 +68,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *    政企分组排序
+ *    Enterprise Group Sort
  *    @param     groupSorts          " gid,gid"
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 
 - (void)groupSort:(NSString *)groupSorts
@@ -80,11 +80,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *    分组里添加设备
+ *    Add devices to group
  *    @param     gid          " gid"
  *    @param     devices          " gid"
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 
 - (void)groupAddDevice:(NSString *)gid
@@ -94,10 +94,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *    分组里所有设备
+ *    All devices in the group
  *    @param     gid          " gid"
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 
 - (void)groupDeviceList:(NSString *)gid

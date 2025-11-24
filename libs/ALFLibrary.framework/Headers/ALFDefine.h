@@ -8,14 +8,14 @@
 #ifndef ALFDefine_h
 #define ALFDefine_h
 
-//账号属性
+//Account group
 typedef NS_ENUM(NSInteger, ALFAccountGroup) {
     AccountGroupUnknown = 0,
     AccountGroupFBB,
     AccountGroupEnterprise
 };
 
-//设备属性
+//Device group
 typedef NS_ENUM(NSInteger, ALFDeviceGroup) {
     DeviceGroupEnterprise = 0,
     DeviceGroupAIS,

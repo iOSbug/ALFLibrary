@@ -13,16 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ALFBanner : NSObject
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
 
 /**
- *    获取列表 banner 通知
+ *    Get banner 
  *
- *    @param     success                成功 回调
- *    @param     failure                失败回调
+ *    @param     success                Successful callback
+ *    @param     failure                Failure callback
  */
 - (void)fetchBanner:(nullable void (^)(ALFBannerModel *))success
             failure:(nullable void (^)(ALFError *))failure;

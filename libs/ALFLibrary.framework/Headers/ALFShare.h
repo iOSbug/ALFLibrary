@@ -14,18 +14,18 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ALFShare : NSObject
 
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
 // MARK: API for Sender
 
 
-/// Sender创建一个分享实例
-/// @param deviceId 设备ID
-/// @param receiverName 接受分享者的账号(trueID登录返回的sub)
-/// @param receiverType 接收者账号类型 ("email", "phone", "ally"(三方快捷登录), "allyCode"(SDK))
-/// @param prodName 设备prodName（cameraInfo.base.prodName）
+/// Create a sharing
+/// @param deviceId  deviceId
+/// @param receiverName  Accepting the sharer's account
+/// @param receiverType Recipient account type ("email",  "allyCode" (SDK))
+/// @param prodName device's prodName（cameraInfo.base.prodName）
 /// @param success success
 /// @param failure failure
 - (void)createNewShare:(NSString *)deviceId
@@ -36,8 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
                failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 获取发起的设备分享信息
-/// @param deviceId 设备ID
+/// Get the device shared information
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)getShareSendInfo:(NSString *)deviceId
@@ -45,9 +45,9 @@ NS_ASSUME_NONNULL_BEGIN
                  failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 删除分享实例
-/// @param deviceId 设备ID
-/// @param receiverUid 接收者UID
+/// Delete share
+/// @param deviceId deviceId
+/// @param receiverUid receive UID
 /// @param success success
 /// @param failure failure
 - (void)deleteshared:(NSString *)deviceId
@@ -57,9 +57,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// 停用某分享
-/// @param deviceId 设备ID
-/// @param receiverUid 接收者UID
+/// Disable share
+/// @param deviceId deviceId
+/// @param receiverUid receive UID
 /// @param success success
 /// @param failure failure
 - (void)disableShareEntry:(NSString *)deviceId
@@ -68,9 +68,9 @@ NS_ASSUME_NONNULL_BEGIN
                   failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 开启某分享
-/// @param deviceId 设备ID
-/// @param receiverUid 接收者UID （ ShareSendReceiverModel.receiverUid ）
+/// Enable share
+/// @param deviceId deviceId
+/// @param receiverUid eceive UID（ ShareSendReceiverModel.receiverUid ）
 /// @param success success
 /// @param failure failure
 - (void)enableShareEntry:(NSString *)deviceId
@@ -82,16 +82,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 // MARK: API for Receiver
 
-/// 接收者查询来自分享者的分享信息
+/// The recipient queries the shared information from the sharer.
 /// @param success success
 /// @param failure failure
 - (void)getShareReceiveInfo:(nullable void (^)(NSArray<ALFShareSendReceiverModel *> *))success
                     failure:(nullable void (^)(ALFError *))failure;
 
 
-/// 被分享者接受摄像头分享
-///  @param deviceId 设备ID
-/// @param senderUid  设备分享发起者的uid
+/// The recipient accepts camera sharing
+///  @param deviceId deviceId
+/// @param senderUid  UID of the device sharing initiator
 /// @param success success
 /// @param failure failure
 - (void)receiveShare:(NSString *)deviceId
@@ -99,8 +99,8 @@ NS_ASSUME_NONNULL_BEGIN
              success:(nullable void (^)(void))success
              failure:(nullable void (^)(ALFError *))failure;
 
-/// Receiver拒收分享
-/// @param deviceId 设备ID
+/// Receiver rejects sharing
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)rejectShare:(NSString *)deviceId
@@ -108,8 +108,8 @@ NS_ASSUME_NONNULL_BEGIN
             failure:(nullable void (^)(ALFError *))failure;
 
 
-/// Receiver删除分享摄像头
-/// @param deviceId 设备ID
+/// Receiver deletes shared camera
+/// @param deviceId deviceId
 /// @param success success
 /// @param failure failure
 - (void)deteleSharedCamera:(NSString *)deviceId

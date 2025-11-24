@@ -12,18 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ALFDownload : NSObject
 
 /**
-*    单例
+*    Singleton
 */
 + (instancetype)shared;
 
-/// 下载云存储或告警视频
+/// Download cloud storage or alarm video
 /// - Parameters:
-///   - deviceId: 设备ID
-///   - mediasUrls: 视频URL数组，可传多个，最后会合并成一个视频
-///   - downloadPath: 下载路径，若传空，则默认下载到系统相册
-///   - progressHandler: 下载进度
-///   - successHandler: 下载成功
-///   - failureHandler: 下载失败
+///   - deviceId: deviceId
+///   - mediasUrls: An array of video URLs can be passed; multiple URLs can be sent and will be merged into a single video in the end.
+///   - downloadPath: Download path: If left blank, the download will default to the system photo album.
+///   - progressHandler: Download progress
+///   - successHandler: Download successful
+///   - failureHandler: Download failed
 - (void)downloadWithDeviceId:(NSString *)deviceId
                   mediasUrls:(NSArray *)mediasUrls
                 downloadPath:(NSString *)downloadPath

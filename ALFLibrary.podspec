@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALFLibrary'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of ALFLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -44,10 +44,6 @@ TODO: Add long description of the pod here.
   ss.libraries = "c++.1", "iconv", "z", "bz2.1.0"
 
   ss.dependency 'Alamofire', '4.9.1'
-  ss.dependency 'Firebase/Crashlytics'
-  ss.dependency 'Firebase/Core'
-  ss.dependency 'Firebase/Messaging' 
-  ss.dependency 'Firebase/Analytics'
   ss.dependency 'MBProgressHUD'
   ss.dependency 'SnapKit'
   ss.dependency 'CocoaAsyncSocket', '7.6.5'
