@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALFLibrary'
-  s.version          = '1.0.8.1'
+  s.version          = '1.0.8.2'
   s.summary          = 'A short description of ALFLibrary.'
 
 # This description is used to generate tags and improve search results.
