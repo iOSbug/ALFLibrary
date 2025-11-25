@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALFLibrary'
-  s.version          = '1.0.8.2'
+  s.version          = '1.0.9'
   s.summary          = 'A short description of ALFLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -55,7 +55,7 @@ TODO: Add long description of the pod here.
   ss.dependency 'SDWebImage', "~> 5.11.0"
   ss.dependency 'AFNetworking', "~> 4.0.1"
   ss.dependency 'FCUUID'
-  ss.dependency 'Sodium', '0.8.0'
+  ss.dependency 'ALFSodium'
   ss.dependency 'Masonry'
   ss.dependency 'SDVersion'
   ss.dependency 'SocketRocket'
