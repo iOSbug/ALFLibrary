@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import AFNetworking
 @_exported import ALFLibrary
-import ALFSodium
 import AVFoundation
 import AVKit
 import Alamofire
@@ -36,6 +35,7 @@ import SDWebImage
 import SDWebImage.SDWebImageDownloader
 import SnapKit
 import SocketRocket
+import Sodium
 import Swift
 import SystemConfiguration
 import UIKit

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALFLibrary'
-  s.version          = '1.0.9.1'
+  s.version          = '1.0.9.3'
   s.summary          = 'A short description of ALFLibrary.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'Tianbao Wang' => '519955268@qq.com' }
   s.source           = { :git => 'https://github.com/iOSbug/ALFLibrary.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
   s.default_subspec     = 'Core'
 
@@ -55,7 +55,6 @@ TODO: Add long description of the pod here.
   ss.dependency 'SDWebImage', "~> 5.11.0"
   ss.dependency 'AFNetworking', "~> 4.0.1"
   ss.dependency 'FCUUID'
-  ss.dependency 'ALFSodium'
   ss.dependency 'Masonry'
   ss.dependency 'SDVersion'
   ss.dependency 'SocketRocket'
@@ -67,6 +66,7 @@ TODO: Add long description of the pod here.
   ss.dependency 'ALFOBSWrapper'
   ss.dependency 'MobileVLCKit', "~> 3.6.0"
   ss.dependency 'ffmpeg-kit-ios-full-gpl-ajc', '6.0.0'
+  ss.dependency 'Sodium','0.9.1'
 
  end
 
