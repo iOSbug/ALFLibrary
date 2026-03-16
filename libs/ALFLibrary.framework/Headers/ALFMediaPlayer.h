@@ -122,13 +122,13 @@ typedef void (^snapShotDoneAction)(UIImage *image);
 - (void)playAlertVideo:(ALFAlertModel *)alertModel;
 
 /**
- *  Playing cloud storage videos
+ *  播放云存储视频
  */
 - (void)playRecordVideo:(NSString *)deviceId record:(ALFCloudStorageModel *)reocrdModel;
 
 /**
- *  Set video preview cover
- *  @param     image                Cover image
+ *  设置视频预览封面
+ *  @param     image                封面图片
  */
 - (void)showPlaceHolderImage:(UIImage *)image;
 

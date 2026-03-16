@@ -18,6 +18,7 @@
 #import <ALFLibrary/CameraStatusManager.h>
 #import <ALFLibrary/TCPManager.h>
 #import <ALFLibrary/NetworkUtility.h>
+#import <ALFLibrary/G711ATsToMovConvertor.h>
 
 #import <ALFLibrary/WVNoDataHelpView.h>
 #import <ALFLibrary/ChatViewController.h>

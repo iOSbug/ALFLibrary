@@ -102,11 +102,11 @@
 		</data>
 		<key>Headers/ALFLib.h</key>
 		<data>
-		ci5wgrd3tV7ojxL3UsniD/AhFAs=
+		0xKDeK4yIZ5oEK/rE5d4qZNPiOA=
 		</data>
 		<key>Headers/ALFLibrary-Swift.h</key>
 		<data>
-		Zwzb93LzlZZHF531XfECAPYVH44=
+		89A3eeAHQSH1M6DJb8sxqYo7DYA=
 		</data>
 		<key>Headers/ALFLibrary.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/ALFMediaPlayer.h</key>
 		<data>
-		XwKlWOhZFnYVyAQGTSGUcRoEwBw=
+		qekKSBEZZVvvGq7ET0Nih5fstko=
 		</data>
 		<key>Headers/ALFMessage.h</key>
 		<data>
@@ -182,11 +182,15 @@
 		</data>
 		<key>Headers/FFmpegManager.h</key>
 		<data>
-		khJggozqwsHTBw5oOpm2XR5LRMA=
+		QXgbhJ9GIkFqU7YnEAzGBvju+ug=
 		</data>
 		<key>Headers/FeedRecordVC.h</key>
 		<data>
 		eMi40OfKHadF6xqeEw+CsMqrxAA=
+		</data>
+		<key>Headers/G711ATsToMovConvertor.h</key>
+		<data>
+		nR4q0NFOmrGVGeDmGoDMMSHwdkI=
 		</data>
 		<key>Headers/HXCacheFileDefine.h</key>
 		<data>
@@ -234,7 +238,7 @@
 		</data>
 		<key>Headers/ObjcUtils.h</key>
 		<data>
-		Se6uGnXDH7yWfD8q8ChBN+8rwmU=
+		178tJOl3eq0HDKdgFk/VfKa22WM=
 		</data>
 		<key>Headers/PlayViewController.h</key>
 		<data>
@@ -310,7 +314,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YlZhT7ho/sD44HvjkCBbmVSh+BA=
+		8ktSOPe+tVLyzZEJ56X35gKk9Lg=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -318,27 +322,27 @@
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		xvh+HVvQUSmcnJY1aFTCHYP0wsg=
+		VNbIc0WuPHI8eij+xI8yvdcKD+w=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		DgBAhGp5oNjd/AyOO3I6WT0GY6M=
+		fEpTw+vEEB3yEa6/KT1+Dgd/ewM=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		0+q55V6kpnstO16E/yd5QjENzao=
+		Hoh5qXr+LXXzhOxgWUgZ74j5aF4=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		gTjRiggUhqALWaoLh61UFy5Jiwo=
+		z8MnIvYTcvComKUcG+u8ZnznoUQ=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0+q55V6kpnstO16E/yd5QjENzao=
+		Hoh5qXr+LXXzhOxgWUgZ74j5aF4=
 		</data>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		TSGZJWpYemPa3mzLxQPi+6Qzu1E=
+		3afmQ0vIo6Gb+JUomYdvkCgVakI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -353,10 +357,6 @@
 	<dict>
 		<key>AliyunEmasServices-Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/kCUGrf8LUdLx4EReOlf4zLJ8NI=
-			</data>
 			<key>hash2</key>
 			<data>
 			d52lQyDICEWwTHosXIFP3LdAmmmlDr2TNUAIopDy80E=
@@ -364,10 +364,6 @@
 		</dict>
 		<key>Headers/ALFAccount.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cA6ORX8yYYarF3fNoeVQ1IQiuio=
-			</data>
 			<key>hash2</key>
 			<data>
 			cGP8lTxIw4LodprT8HmK7MNftMTEg72QewE3swDwlkw=
@@ -375,10 +371,6 @@
 		</dict>
 		<key>Headers/ALFAlarmListModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3pWaEjVmhh9vSYCJM57q5LjahFU=
-			</data>
 			<key>hash2</key>
 			<data>
 			R6hwl3eytbccHLK5ks50MqYQjFxFvknvau6tR0Lt0TI=
@@ -386,10 +378,6 @@
 		</dict>
 		<key>Headers/ALFAlertSurveyModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BjsgGmj6+NC0dK9ZcdEsKSaYd7I=
-			</data>
 			<key>hash2</key>
 			<data>
 			ftDvaLSbqKQryauDNnSgKb8mMIUwWnBzLiOBUy2zEeo=
@@ -397,10 +385,6 @@
 		</dict>
 		<key>Headers/ALFAlertsCalendarModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wGMLpoa9VRmUP4Mq2DgWw8hyX2A=
-			</data>
 			<key>hash2</key>
 			<data>
 			ccdbAFjASmuPjraVfPP5nCGZVzmf0wPrTsgUWd9s8k4=
@@ -408,10 +392,6 @@
 		</dict>
 		<key>Headers/ALFAlertsListModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			edaZOWhhyf5hXWyRry0C5VlYUtw=
-			</data>
 			<key>hash2</key>
 			<data>
 			K6S9PjevNlbaeSTnqtr1WxLAD1VefhtnEv+zm16Q2Qg=
@@ -419,10 +399,6 @@
 		</dict>
 		<key>Headers/ALFBanner.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4Tr5z7C7lF8DnkyuJaOk12880wk=
-			</data>
 			<key>hash2</key>
 			<data>
 			2Z053hmodZwvNJwzzad+YQWKYspOZ4cJJlVHOf1v08U=
@@ -430,10 +406,6 @@
 		</dict>
 		<key>Headers/ALFBannerModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PUZEMaYGOyGKfVWi8dlCsWClpvw=
-			</data>
 			<key>hash2</key>
 			<data>
 			SH1GeJxeCe2Gla3KUvI1Snlpwmu8qWeaxX09Cv4u/Fc=
@@ -441,10 +413,6 @@
 		</dict>
 		<key>Headers/ALFBindDeviceModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Mj3iigcKrlwj5JHe21zRfvVbciQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			VfVDQDypalsejt42mm2XsD/fTCmzG4nKfxpXJ9+gy/8=
@@ -452,10 +420,6 @@
 		</dict>
 		<key>Headers/ALFBinder.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UWoC18qN3d2QT6nhp20RB08rXNM=
-			</data>
 			<key>hash2</key>
 			<data>
 			FCURFrBwPEyEfr19EEgKXnv8aCRjKMkhZfLz54x6X+Y=
@@ -463,10 +427,6 @@
 		</dict>
 		<key>Headers/ALFCloud.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MMEcnUmxAQ6Fbmli2Pmk8IySBgs=
-			</data>
 			<key>hash2</key>
 			<data>
 			v2XgzVoM4bl6KqCDx2+iMIWYeQarHa24CzpiWYCFQUU=
@@ -474,10 +434,6 @@
 		</dict>
 		<key>Headers/ALFCloudOrderModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DWqCg3gh8WeonYGj7MZ6VXBB84E=
-			</data>
 			<key>hash2</key>
 			<data>
 			gTZYA2OFDiBRzeL/S/zG1nehsie7LkzFqgm2FjGMQS0=
@@ -485,10 +441,6 @@
 		</dict>
 		<key>Headers/ALFCloudStorageDeleteModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/pQVocGUnA9w49gmxxAWv0LHIpk=
-			</data>
 			<key>hash2</key>
 			<data>
 			c2CAmUQmnA1cuY3fJ/2eC9C0x3uaJUa+/lakfv1c7YY=
@@ -496,10 +448,6 @@
 		</dict>
 		<key>Headers/ALFCloudStorageModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6d4pt8zfXP5FaKtuU07x+fUYqyI=
-			</data>
 			<key>hash2</key>
 			<data>
 			xjU+ewve37nRsiSf1YXu2mOvhsE1d/C5tcjbgul/598=
@@ -507,10 +455,6 @@
 		</dict>
 		<key>Headers/ALFCocoaSecurity.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aZawHtWB5m41tmkxoUMSPjfb8a8=
-			</data>
 			<key>hash2</key>
 			<data>
 			hbZ0fS3Yuk3xmRPPTphJoCPfO95pOhBSZUFeViT7+H0=
@@ -518,10 +462,6 @@
 		</dict>
 		<key>Headers/ALFDefine.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cy4AKUs8wSBoZXui4llrReGHZW4=
-			</data>
 			<key>hash2</key>
 			<data>
 			f1s46SpEZYVwbFPu/HED9w6dHb5dy++ArskAcvAqDFs=
@@ -529,10 +469,6 @@
 		</dict>
 		<key>Headers/ALFDevice.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Wfw1le3KPlcrEcoZ5lj88Gz2JRE=
-			</data>
 			<key>hash2</key>
 			<data>
 			NX7GyF7Rz56YKndyNqkwL35sKxSvokprd2QtlTQcjdo=
@@ -540,10 +476,6 @@
 		</dict>
 		<key>Headers/ALFDeviceInfoModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uYCrSDNCDCy+kuh0zH+Dp2Jku7o=
-			</data>
 			<key>hash2</key>
 			<data>
 			LJm4N/LK/hN1zoJNwEFcJPtvBGE3mOzI2FAWS7Fj0ak=
@@ -551,10 +483,6 @@
 		</dict>
 		<key>Headers/ALFDiagnoseModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rfns4pPe2YgGeF9L/p6JWenTKLA=
-			</data>
 			<key>hash2</key>
 			<data>
 			DCRpQJWnMH0dOYsdPrn/PjIXI3c1SZoWmm8qaHCwHig=
@@ -562,10 +490,6 @@
 		</dict>
 		<key>Headers/ALFDiscoverDeviceModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V4Lm9Qm7tNArrsjEEcCb8vqF7Rg=
-			</data>
 			<key>hash2</key>
 			<data>
 			JkBuyASTYRNbvCqQpg5gZTX9aU5f9AJNkXsN7swaN0g=
@@ -573,10 +497,6 @@
 		</dict>
 		<key>Headers/ALFDownload.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JH0V1sp7Jn2qSpE/g3Ux6G1YSNo=
-			</data>
 			<key>hash2</key>
 			<data>
 			T9ubD+mTRzONO6jM02hAE0iqvnIOvVGIMe7SaYtrvgU=
@@ -584,10 +504,6 @@
 		</dict>
 		<key>Headers/ALFError.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2LjHqasuCHQwghixW0IIrAFvagw=
-			</data>
 			<key>hash2</key>
 			<data>
 			YAZTvnpr0labXoFvouBFylq057iz0oQj4bN8B+79Ui4=
@@ -595,10 +511,6 @@
 		</dict>
 		<key>Headers/ALFGroup.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6wGyxfyD9cBgTtLOpmGdUqBeb8I=
-			</data>
 			<key>hash2</key>
 			<data>
 			N+CS5hW6RgRUWjGMrT+iMGpqQD+Gl5udde7nSyJin1E=
@@ -606,10 +518,6 @@
 		</dict>
 		<key>Headers/ALFGroupsModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9yfLH8ejtugqeE7QDeD5DW14ZoM=
-			</data>
 			<key>hash2</key>
 			<data>
 			+6u7tNdz8RPoqHJAs4xmNhb/DanDy5xB40ayBSA/8E0=
@@ -617,32 +525,20 @@
 		</dict>
 		<key>Headers/ALFLib.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ci5wgrd3tV7ojxL3UsniD/AhFAs=
-			</data>
 			<key>hash2</key>
 			<data>
-			wdrSA22fCDIUZccjgh9Hf0hMsLQNbTMG4aEYwCR1Evc=
+			eh3qeQoeDJHxIu3AYRjPDjKnDEFJolaWOUB42eXEQqs=
 			</data>
 		</dict>
 		<key>Headers/ALFLibrary-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zwzb93LzlZZHF531XfECAPYVH44=
-			</data>
 			<key>hash2</key>
 			<data>
-			WQjXwgcq5Uk2bED7AMjdviw9E9XVs24iXtoj/sljxKQ=
+			DZ2D9cirvlWoIHWkuDRoJcbmyTF4G0LixAQstVLoEEQ=
 			</data>
 		</dict>
 		<key>Headers/ALFLibrary.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dd793b7xJnEbCXlO99cwlWN5oyw=
-			</data>
 			<key>hash2</key>
 			<data>
 			bKp+oS64m5O9XGKPHG1/u4MGQK2ca0yuT0m+gN2Dlao=
@@ -650,21 +546,13 @@
 		</dict>
 		<key>Headers/ALFMediaPlayer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XwKlWOhZFnYVyAQGTSGUcRoEwBw=
-			</data>
 			<key>hash2</key>
 			<data>
-			6yYj9snmquZxBJEH9HA0Rvo7MfLbYb3QfLkDkh/nf5E=
+			JNr5aKcD0+/62yLbIVbyFk3DjGTuwc2fryx3sQlJXAc=
 			</data>
 		</dict>
 		<key>Headers/ALFMessage.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			du5Wur3sJ/IMHd2ojCqAxKCkUgc=
-			</data>
 			<key>hash2</key>
 			<data>
 			4Y3IT0zclSoEC7w1SmALIaUMyEDpRBHFj7OuOvPRZiQ=
@@ -672,10 +560,6 @@
 		</dict>
 		<key>Headers/ALFQualityModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			loZHTmTSIXGIUh6ifjOZB8kh+pw=
-			</data>
 			<key>hash2</key>
 			<data>
 			wGrxV4ljIahF21mxL+RkpXDRdmAGTJLm/9Nf8oriioY=
@@ -683,10 +567,6 @@
 		</dict>
 		<key>Headers/ALFSettings.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vEGnW9O+osoR3L6c6hWkMv6XrHw=
-			</data>
 			<key>hash2</key>
 			<data>
 			KDv+Bb0zIWTtJFUQhr3yOdReqZuh5l5YEeAOGaqa6qk=
@@ -694,10 +574,6 @@
 		</dict>
 		<key>Headers/ALFShare.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ayFdRvX/Rgz4knvxLiJUisf2U1o=
-			</data>
 			<key>hash2</key>
 			<data>
 			w7fKuNanlhlc5Hc/NxdZ3PoKDfFLgekgFi8EGC1eWHY=
@@ -705,10 +581,6 @@
 		</dict>
 		<key>Headers/ALFShareSendReceiverModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QcChGWw7m9NYPz85pCBOdFhXcLo=
-			</data>
 			<key>hash2</key>
 			<data>
 			bwzd0lpqiJogCR6V3P0WW+SbBXrZOSKn04ezIlms7hk=
@@ -716,10 +588,6 @@
 		</dict>
 		<key>Headers/ALFTimezoneModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4M4zJ8lnwp2mqaWrnZU1kjWnDpI=
-			</data>
 			<key>hash2</key>
 			<data>
 			1mHBk/qYiJ+DEfoXQeq0ib1mTVIoai/1GhI4Mg4b2LE=
@@ -727,10 +595,6 @@
 		</dict>
 		<key>Headers/ALFViewAngleModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tfRCQWlaw+OYlMEefYwPSeJWfTs=
-			</data>
 			<key>hash2</key>
 			<data>
 			FtjGFL6z5omZ9s8kutkRS4dorKHuE7gPJ5IYQh0NBlw=
@@ -738,10 +602,6 @@
 		</dict>
 		<key>Headers/ALFWifiListModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Bwpk0qed1QIm+oWrTVnfbAxNs4A=
-			</data>
 			<key>hash2</key>
 			<data>
 			XBr1q7CuJXWhX7xKxMd6t4gPBb2dD4zI2Jrslryfm8E=
@@ -749,10 +609,6 @@
 		</dict>
 		<key>Headers/AlbumManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			75cficd+YqYemepWclKPZBbHx3Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			YIo3UQ6XeBlZ7sI8ewDSqrzU0Sir3bIjahmTTpU8yp0=
@@ -760,10 +616,6 @@
 		</dict>
 		<key>Headers/CalenderUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RXGZyo2duIs8o2X1kOoa7tPsO1U=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZHCrP53V9FyFYzolM52DAilz1jNOhk5UpLS8bki2Z2E=
@@ -771,10 +623,6 @@
 		</dict>
 		<key>Headers/CameraConnectionModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eumBiIoJ+mtLFy7Vbd6MvuBA/2Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			fPKawmHNgC8uX8BmQxrB3mjKvymlbLK44Uru3WYlfzI=
@@ -782,10 +630,6 @@
 		</dict>
 		<key>Headers/CameraStatusManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NgCJNU95O5cLxI0NOnJYnKgVeis=
-			</data>
 			<key>hash2</key>
 			<data>
 			tOzKFRDhF/lBSwGyeYkMYCLBnBohsA5xy1kOzS2pZAY=
@@ -793,10 +637,6 @@
 		</dict>
 		<key>Headers/ChatViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aqd0djZr4bFsU6UCmbMkRXCMxi4=
-			</data>
 			<key>hash2</key>
 			<data>
 			3C6L93dbxmR8hVuP+QuaV1rF6ORH89NLXCd1HKVJ3CE=
@@ -804,10 +644,6 @@
 		</dict>
 		<key>Headers/CustomAVPlayerViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aeDrpDNcrtYZoViFTarYaXrvweY=
-			</data>
 			<key>hash2</key>
 			<data>
 			GXEFQoSoWSHpy21qqyKRyMVUMsz+PoGAwTmZnBnU0Og=
@@ -815,10 +651,6 @@
 		</dict>
 		<key>Headers/DACircularProgressView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FNJyoFVAtDUXa8d2w3GbXXs8af4=
-			</data>
 			<key>hash2</key>
 			<data>
 			LpCrPTORBanIhnTxO5xeoDCSGReopBjx0SO81EvcFmY=
@@ -826,10 +658,6 @@
 		</dict>
 		<key>Headers/DiagnoseTCPManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YhTEN68q4slw0PpgOgoDxswAl40=
-			</data>
 			<key>hash2</key>
 			<data>
 			L+zWTl+RK72W/aJSvVdQaVnw9Pd8bEIQz747VkV2Fdw=
@@ -837,32 +665,27 @@
 		</dict>
 		<key>Headers/FFmpegManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			khJggozqwsHTBw5oOpm2XR5LRMA=
-			</data>
 			<key>hash2</key>
 			<data>
-			XMpfr8BYkxhozgI5oj+t2PwV/nndDFdClPn8ysBWMqU=
+			9XNLEqmmXrlmIc9p4gphqQKaUIY3djj8nTsYlMcvmeY=
 			</data>
 		</dict>
 		<key>Headers/FeedRecordVC.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eMi40OfKHadF6xqeEw+CsMqrxAA=
-			</data>
 			<key>hash2</key>
 			<data>
 			1IyHD8/Jaxl33/+k538cAUqSGBdqFmA1HD+015NG/N4=
 			</data>
 		</dict>
+		<key>Headers/G711ATsToMovConvertor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vpkdwVDWRF3Su/8y4sHm3q4QR2RnluOv1xbIQKPbA/4=
+			</data>
+		</dict>
 		<key>Headers/HXCacheFileDefine.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V+sBGFCSZDz9UyOc+v5x5G/7Oyw=
-			</data>
 			<key>hash2</key>
 			<data>
 			8Ju+CsMNZugjk6LJzL+zf3NUB3fdEGvTGadxx5igPbw=
@@ -870,10 +693,6 @@
 		</dict>
 		<key>Headers/HXCacheFileManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			g66yY94hBi2vkBseUMSN2BuWvYo=
-			</data>
 			<key>hash2</key>
 			<data>
 			RHas+MCe+xeHYoPaWN65n1yVJj61EQqLnIdhMaRtv0Q=
@@ -881,10 +700,6 @@
 		</dict>
 		<key>Headers/HXCacheFileViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5UubbcaAB8HLmIJk13DMAVDOmow=
-			</data>
 			<key>hash2</key>
 			<data>
 			YcmByh9T7hDrEDv/Yx5JDO+DZxAqaKzDePlZ6pyj56g=
@@ -892,10 +707,6 @@
 		</dict>
 		<key>Headers/HostEntry.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			b6TNV9jgDH2DvI8Y6Uh4Gcjb15o=
-			</data>
 			<key>hash2</key>
 			<data>
 			5Sx7cPxR4LCCK02TOpxFUCbbRDR7nFuGgwF+fAHmD6Y=
@@ -903,10 +714,6 @@
 		</dict>
 		<key>Headers/LMJVerticalScrollText.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VZoDvrqpueWsOTv2nZJDw/xh5yA=
-			</data>
 			<key>hash2</key>
 			<data>
 			L6T5B4VSl1Qr70Snk7zZM7v5/hsQWyzg2/MZrVeH0h4=
@@ -914,10 +721,6 @@
 		</dict>
 		<key>Headers/MJEncryptString.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lLDMY770/T/j/uRNwqGU8ysDewA=
-			</data>
 			<key>hash2</key>
 			<data>
 			fAj/pCVr0tNPJpmMTtjtgJmWF6nWVSacCK9U1aTUkzU=
@@ -925,10 +728,6 @@
 		</dict>
 		<key>Headers/MWCaptionView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WBjVbxSojTAwO9y6ROGLvOZaRGs=
-			</data>
 			<key>hash2</key>
 			<data>
 			8Lrdo9u+B9ckC4igwzEOS33ugeLf9u4FP9gfeeon6tI=
@@ -936,10 +735,6 @@
 		</dict>
 		<key>Headers/MWPhoto.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G1Lb3rSaD+DKLJ7pU3RSKzHxzj0=
-			</data>
 			<key>hash2</key>
 			<data>
 			BIDLVmpN6mC9/WT6l/oMrh5vVveTdQ18s0HzrSGYRh4=
@@ -947,10 +742,6 @@
 		</dict>
 		<key>Headers/MWPhotoBrowser.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8fNx8Bd4xgcQjazXYSioLcNtvYE=
-			</data>
 			<key>hash2</key>
 			<data>
 			3bJfRhycdcXGqUBdKR18WW260fwpDCOXLug8cF2bm1g=
@@ -958,10 +749,6 @@
 		</dict>
 		<key>Headers/MWPhotoProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pfIWE3KQZUoAvYBcj3b6BRxWXSA=
-			</data>
 			<key>hash2</key>
 			<data>
 			28jA/Y/AepCsuM6A1LaAj1YAlfTFB7jv42Fp3Hx9MSw=
@@ -969,10 +756,6 @@
 		</dict>
 		<key>Headers/NetworkUtility.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BjAV+9lhh8RwopYgd5XONOEbUc0=
-			</data>
 			<key>hash2</key>
 			<data>
 			7ay0Gq1wgXsuA8ictlSVb0r+XiUXC/tS3HeS3asjpAg=
@@ -980,21 +763,13 @@
 		</dict>
 		<key>Headers/ObjcUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Se6uGnXDH7yWfD8q8ChBN+8rwmU=
-			</data>
 			<key>hash2</key>
 			<data>
-			xttmUEMOvuFN0ock1vEaM0FbW7PYxMSKfSTgy3xviF8=
+			fYxe8PYEFj3U4Se50j2HVBnaXarYuBY0dP2p1CYDpic=
 			</data>
 		</dict>
 		<key>Headers/PlayViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qdXtdhvQ9CHxb0uKaLIVsZqdUDo=
-			</data>
 			<key>hash2</key>
 			<data>
 			VGGHTIJRF0XpRBeOr5lBYbUiNGxLfJYQFPWxEnpDBGw=
@@ -1002,10 +777,6 @@
 		</dict>
 		<key>Headers/SimplePingHelper.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P2CoYocb9AL87wKnvjLpYZxx94w=
-			</data>
 			<key>hash2</key>
 			<data>
 			yPLP9QEfd26G1odIXdO697AsCX4fLD3wWlbKyhoEiII=
@@ -1013,10 +784,6 @@
 		</dict>
 		<key>Headers/StepSlider.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xERbrQo0BDXGx3dHrc0ANANnGjw=
-			</data>
 			<key>hash2</key>
 			<data>
 			612lKqWgCpcNfuftwyzOGUZcJti8grL27JfuI5x2snM=
@@ -1024,10 +791,6 @@
 		</dict>
 		<key>Headers/TCPManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9O+ZAa8d5N0Tm2x2fccGRKz3J1E=
-			</data>
 			<key>hash2</key>
 			<data>
 			PtVahfkmhiGEmlVjN9hwTUUN5tLAEvYYNu1TSinM8RI=
@@ -1035,10 +798,6 @@
 		</dict>
 		<key>Headers/TelnetClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FOjwkrWnDHg7InNFUxSoANej9W0=
-			</data>
 			<key>hash2</key>
 			<data>
 			sVLmRwslXbPWCOfuBrxifeGhPdeka1jhNluS8iI9fVo=
@@ -1046,10 +805,6 @@
 		</dict>
 		<key>Headers/VLCUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gUY2PB6mBu5TJMYTUEUXRWr/mP4=
-			</data>
 			<key>hash2</key>
 			<data>
 			RQnGfXjbBkqDvKBmE42MP2Cfqxx3r3INqKU4Cb2oSuc=
@@ -1057,10 +812,6 @@
 		</dict>
 		<key>Headers/WKWebViewJavascriptBridge.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5SNsRgTZnKcESBlc+/G5sXGfhI8=
-			</data>
 			<key>hash2</key>
 			<data>
 			HYVMtn1E5ei59XCOnMrGJJKsYFXriPt/8zjfZmm9brU=
@@ -1068,10 +819,6 @@
 		</dict>
 		<key>Headers/WVAlertDetailViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lnDnw/66nZKvmMX7/DcXwZ7rgsQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			LuJG4jBwf8nLKUTNXC1mH1OqhD4eNryByIDqSGMnQWc=
@@ -1079,10 +826,6 @@
 		</dict>
 		<key>Headers/WVCameraControlView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8MCRFQ/Z6t05JJOCK953ERU59fM=
-			</data>
 			<key>hash2</key>
 			<data>
 			f78a6WZQiIWCFn38AhPfqil5Wci1IcQ15PkjXb9JSgA=
@@ -1090,10 +833,6 @@
 		</dict>
 		<key>Headers/WVConnectionManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4WMquKZ9jWWG0dqRx2mDlKrEqpg=
-			</data>
 			<key>hash2</key>
 			<data>
 			cJx1UvvOtCP+EAyRwL0wFWfh7YLF5GhQOFPa4cZt/8Q=
@@ -1101,10 +840,6 @@
 		</dict>
 		<key>Headers/WVGetPlayUrlManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cYiRQIOeou1XSBiy3LBBYAupgU4=
-			</data>
 			<key>hash2</key>
 			<data>
 			bCAtLwq83jkHkeNhf6KhLp9v4SPUt1lHpiutphSB50U=
@@ -1112,10 +847,6 @@
 		</dict>
 		<key>Headers/WVNoDataHelpView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ek7NEeE0mRNV3wMFWgehGmaPXEE=
-			</data>
 			<key>hash2</key>
 			<data>
 			AR4Ue+Tl9mBZwmSL7f6Z5KPkB8bALC3dc7Bqsh+DS+s=
@@ -1123,10 +854,6 @@
 		</dict>
 		<key>Headers/WVPlayerStatusView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VPXVzEk3uq3donSsN/L8AQdoAoE=
-			</data>
 			<key>hash2</key>
 			<data>
 			Llum20hqkb2Vd1i9YffCjM50qHTbpgD4jVBkjaotc3I=
@@ -1134,10 +861,6 @@
 		</dict>
 		<key>Headers/WebViewJavascriptBridgeBase.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			X17D6JlybmfibqMLH+W6YJXHoY0=
-			</data>
 			<key>hash2</key>
 			<data>
 			NEoogghgAQ2JharmwydWhzMz1WAhRF29q68S6nxtxX0=
@@ -1145,10 +868,6 @@
 		</dict>
 		<key>Headers/hardWareType.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			psdgE5YjwajUBQ5fAlK0EAC8qcg=
-			</data>
 			<key>hash2</key>
 			<data>
 			Sdz/Ozqnku8zQuc3OK3WRka85ttK9RB1LyuzDV23uJk=
@@ -1156,10 +875,6 @@
 		</dict>
 		<key>Headers/hyBaseType.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			r+UiBsgHAlcgTfUQ3sougBHjy9s=
-			</data>
 			<key>hash2</key>
 			<data>
 			wkIMtCnTLK0PHT9zvl4vZW0f61FhZ30hpPoUk2WtK1A=
@@ -1167,10 +882,6 @@
 		</dict>
 		<key>Headers/quadPlayer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			T8yMY5U8Ojj0cK64WryZjBcda0U=
-			</data>
 			<key>hash2</key>
 			<data>
 			rIieaSCOcSEjLDUVaBRYmipcwMz7KUldPGTeYFwl0NA=
@@ -1178,10 +889,6 @@
 		</dict>
 		<key>Headers/quadScreentVC.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+Nz9qwsRoZD0MwB5gCIn5t+e4c0=
-			</data>
 			<key>hash2</key>
 			<data>
 			8fFJ/3wPMVeDZfn+jA4eVy/Aij3Y6oZFEKRA97Us5c8=
@@ -1189,10 +896,6 @@
 		</dict>
 		<key>LICENSE</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			c2ZvwszzoLH81EHrB6Lv/pUSHL0=
-			</data>
 			<key>hash2</key>
 			<data>
 			2i3NZhhzGMA5ytc/D91kl9d0MdxEH616ilkJEbwwue4=
@@ -1200,76 +903,48 @@
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xvh+HVvQUSmcnJY1aFTCHYP0wsg=
-			</data>
 			<key>hash2</key>
 			<data>
-			wkqvZ181GtIxx8GkEoge5QoUpCzqaofX7F2wSPV31AI=
+			Gnti3mbD/Z6oBbtviRlmlWlonZ38Z63MjdBL6bWWcAI=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DgBAhGp5oNjd/AyOO3I6WT0GY6M=
-			</data>
 			<key>hash2</key>
 			<data>
-			KajrphS27zYSeq/kbZWkXaiaHNEpVnmqVhdsDbNOrW4=
+			2I3mrTC+NA3uxvn9uSGJi57JlJgMuVIvYPjM5wAQwyg=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0+q55V6kpnstO16E/yd5QjENzao=
-			</data>
 			<key>hash2</key>
 			<data>
-			dsk/v5eKmAudgSEm3r8zwHYr6nMCfTJng6tOhlYsTRI=
+			wumxuun9B3Sca1OQj9TtFTYS8dB4jqKI9xweSgXVPlY=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gTjRiggUhqALWaoLh61UFy5Jiwo=
-			</data>
 			<key>hash2</key>
 			<data>
-			5aMSUHck9qqKl82uBLI7DEZxVqTQm7SizapkzjACMJ8=
+			8/vS5dr28ialTVVn+taEg9BM1gbFpb0MGi8eUQjf7d0=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0+q55V6kpnstO16E/yd5QjENzao=
-			</data>
 			<key>hash2</key>
 			<data>
-			dsk/v5eKmAudgSEm3r8zwHYr6nMCfTJng6tOhlYsTRI=
+			wumxuun9B3Sca1OQj9TtFTYS8dB4jqKI9xweSgXVPlY=
 			</data>
 		</dict>
 		<key>Modules/ALFLibrary.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TSGZJWpYemPa3mzLxQPi+6Qzu1E=
-			</data>
 			<key>hash2</key>
 			<data>
-			JeaTzcU9sMX8+Y/T3g2quhR0xe3gE6dWIpOP6rDU3jI=
+			qkvBZQftQN4KnF5ER05qgw0UnJ4Imjun3vhWluUHbeA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zvaFV1jxzqyKXPIQFEIQt4D3ek8=
-			</data>
 			<key>hash2</key>
 			<data>
 			OT7XLBFU/t3WGC87Lde1sTx6O1CWyGXEzNcY9+lH7Tg=
@@ -1277,10 +952,6 @@
 		</dict>
 		<key>README.md</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rODw3tVGD4tFK27YaGwqodn63hs=
-			</data>
 			<key>hash2</key>
 			<data>
 			I3MQLl55MnLKOf27FxH8WRySzcfgpHt1cRfYBdOzgPw=

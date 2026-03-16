@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ffmpegkit/MediaInformation.h>
+#import <ffmpegkit/FFprobeKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)stopRuning;
 
 - (NSString *)getCodecName:(NSString *)videoPath;
+
+-(MediaInformation *)videoFileIsH265Hevc:(NSString *)videoPath;
 
 @end
 
